@@ -15,8 +15,6 @@ import org.openqa.selenium.remote.CapabilityType;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-
-
 public class TestBase
 
 {
@@ -35,8 +33,7 @@ public class TestBase
 
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: prop.getProperty("browser").toLowerCase();
-		System.out.println(browserName);
-		System.out.println(browserName);
+		//System.out.println(browserName);
 
 		if (driver == null)
 
@@ -45,18 +42,23 @@ public class TestBase
 
 			{
 				WebDriverManager.chromedriver().setup();
-				
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
 				chromeOptions.setAcceptInsecureCerts(true);
 
 				if (prop.getProperty("headless").equalsIgnoreCase("yes"))
 
+				{
+
 					return new ChromeDriver(chromeOptions);
+
+				}
 
 				else
 
+				{
 					return new ChromeDriver(chromeOptions);
+				}
 			}
 
 			else if (browserName.equalsIgnoreCase("firefox"))
