@@ -12,3 +12,5 @@ Examples:
 |Name|
 |Tom|
 |Pot|
+|Beet|
+|cucu|
