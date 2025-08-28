@@ -35,6 +35,8 @@ public class TestBase
 
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: prop.getProperty("browser").toLowerCase();
+		System.out.println(browserName);
+		System.out.println(browserName);
 
 		if (driver == null)
 

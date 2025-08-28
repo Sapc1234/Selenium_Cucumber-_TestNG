@@ -39,7 +39,7 @@ public class CheckoutPageStepDefinitions
 
 	{
 		cp.checkOutItems();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		//Assertion to extract name from screen and  compare with name
 		
 	}
