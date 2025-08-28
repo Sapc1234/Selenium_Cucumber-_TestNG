@@ -73,6 +73,7 @@ public class OffersPageStepDefinitions
 		// Assert.assertEquals(offerPageProductName, product_Name);
 		Assert.assertEquals(offerPageProductName, testContextSetup.product_Name);
 		System.out.println(offerPageProductName);
+		System.out.println("The product validation is successfully completed");
 
 	}
 }
