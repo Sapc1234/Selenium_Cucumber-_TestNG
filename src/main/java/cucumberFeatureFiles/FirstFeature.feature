@@ -39,8 +39,8 @@ Feature: Application Login
   Scenario: User Page Default sign up
   Given the user is on the practice landing page
   When the user sign up into application
-  |rahul|
-  |Handrale|
+  |Sharan|
+  |Padashetty|
   |contact@gmail.com|
   |12457893|
   Then the home page is displayed
